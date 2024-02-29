@@ -422,7 +422,6 @@ input[type=email] {
 
     .footer-boxes {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
         padding: 5rem 0 2rem;
     }
 
@@ -496,8 +495,8 @@ input[type=email] {
 
     .footer-boxes .first {
         grid-column: 1/-1;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 3.2rem;
+        /* margin-bottom: 2rem; */
     }
 
     .update-container {
@@ -510,7 +509,6 @@ input[type=email] {
 
     .project {
         flex-direction: column;
-        margin-bottom: 10rem;
     }
 
     .right-bar {
