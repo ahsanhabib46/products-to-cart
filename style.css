@@ -521,4 +521,8 @@ input[type=email] {
     .social-media{
         width: 90%;
     }
+
+    .cart-header{
+        font-size: 2rem;
+    }
 }
