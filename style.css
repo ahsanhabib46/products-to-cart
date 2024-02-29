@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ################### Utility class ################# */
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.theme-color-bg {
+    background: #000;
+}
+
+.theme-color-font {
+    color: #00000099;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.padding-global {
+    padding: 100px 0;
+}
+
+.btn-global {
+    border-radius: 30px;
+    padding: 0.8rem;
+    background-color: #f0f0f0;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+.active {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #00000099;
+}
+
+.star {
+    color: #FFC633;
+    font-size: 1.5rem;
+}
+
+.half-star {
+    background: linear-gradient(to right, gold 50%, gray 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details-head {
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.add {
+    display: inline-block;
+}
+
+.add a {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+/* ####################### Navbar styling###################### */
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.top span {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav {
+    height: 100px;
+    padding: 1.8rem 0;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    height: 48px;
+    padding: 0.5rem 1.5rem;
+    margin: 0 auto;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+nav .head a {
+    padding-left: 0;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.search input {
+    padding: 5px 50px 5px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+input[type=search] {
+    border-radius: 30px;
+    font-size: 0.9rem;
+    background-image: url(./images/Vector\ \(7\).png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+/* ######################################### */
+
+.promo input[type=text] {
+    border-radius: 30px;
+    font-size: 0.9rem;
+    background-image: url(./images/Vector\ \(10\).png);
+    background-position: 10px ;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    padding: 12px 40px;
+}
+
+.promo input {
+    background: #f0f0f0;
+    border: none;
+}
+
+.promo input:focus {
+    border: none;
+    outline: none;
+}
+
+.checkout-btn {
+    width: 100%;
+}
+
+/* ######################## Wrapper ############# */
+.wrapper {
+    margin: 1rem auto 8rem;
+}
+
+.project {
+    display: flex;
+    gap: 2rem;
+}
+
+.shop {
+    flex: 70%;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid #00000099;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.box {
+    display: flex;
+    gap: 2rem;
+}
+
+.box img {
+    border-radius: 20px;
+    width: 124px;
+    height: 124px;
+    object-fit: cover;
+}
+
+
+.right-bar {
+    flex: 30%;
+    border: 1px solid #00000099;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: auto;
+}
+
+.right-bar h3 {
+    margin-bottom: 1rem;
+}
+
+.right-bar p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.promo-btn {
+    width: 100%;
+}
+
+.promo-btn .promo-apply {
+    padding: 0.8rem 1.5rem;
+}
+
+
+.box {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.content .add {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.content .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.fa-solid {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* ############# footer styling############# */
+
+.footer {
+    background-color: #f0f0f0;
+}
+
+
+.footer-box ul {
+    list-style-type: none;
+    line-height: 2rem;
+    color: #00000099;
+
+}
+
+.footer-head {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-media a {
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.social-media li a:hover {
+    color: rgb(165, 107, 107);
+}
+
+/* ############# footer styling########## */
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+.footer-image {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-image img {
+    display: inline-block;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/* ############### Update container styling########### */
+input[type=email] {
+    border-radius: 30px;
+    font-size: 1rem;
+    background-image: url(./images/Vector\ \(8\).png);
+    background-position: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+
+.footer-container {
+    position: relative;
+}
+
+.footer-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 1rem;
+    padding: 7rem 0 2rem;
+}
+
+.update-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 1rem 2.5rem;
+    position: absolute;
+    top: -20%;
+    left: 5%;
+
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.search-box input {
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+
+
+/* ######################################### */
+@media (max-width:600px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    nav a {
+        padding: 0 10px;
+    }
+
+    .footer-boxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-boxes .first {
+        width: 100%;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .foot img {
+        border-radius: 10px;
+    }
+
+    /* ######################################## */
+    .project {
+        gap: 1rem;
+    }
+
+    .content-body {
+        gap: 0.4rem;
+    }
+
+    .box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cart-btn {
+        padding: 0.3rem;
+    }
+
+    .update-container {
+        padding: 0;
+        gap: 0;
+    }
+
+    .up-head {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+   
+    .checkout-btn{
+        width: 100%;
+    }
+    .promo-btn{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    nav a {
+        padding: 0 3px;
+    }
+}
+
+@media (max-width:992px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    .footer-boxes .first {
+        grid-column: 1/-1;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .update-container {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+        top: -25%;
+    }
+
+    /* ######################################## */
+
+    .project {
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+
+    .right-bar {
+        margin-bottom: 4rem;
+    }
+    .footer-boxes{
+        width: 90%;
+    }
+    .footer-head{
+        width: 90%;
+    }
+
+    .social-media{
+        width: 90%;
+    }
+}

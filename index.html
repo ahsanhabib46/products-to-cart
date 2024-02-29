@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <script src="https://kit.fontawesome.com/445a99f27e.js" crossorigin="anonymous"></script>
+    
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    Cart Page
+    <div class="top">
+        <p>Sign up and get 20% off to your first order. <span>Sign Up Now</span> </p>
+        <p>X</p>
+    </div>
+    <nav class="container nav">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li><a href="#">Shop &caron;</a></li>
+            <li><a href="#">On Sale</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Brands</a></li>
+
+        </ul>
+        <ul class="navbar">
+            <li class="head"><a href="#">SHOP.CO</a></li>
+            <li class="hideOnMobile"><a href="#">Shop &caron;</a></li>
+            <li class="hideOnMobile"><a href="#">On Sale</a></li>
+            <li class="hideOnMobile"><a href="#">New Arrivals</a></li>
+            <li class="hideOnMobile"><a href="#">Brands</a></li>
+            <li class="hideOnMobile search "><a href="#"><input type="search" placeholder="Search For Products... "></a>
+            </li>
+            <li class="menu-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                    </svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+                    </svg></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="container cart"><span>Home ></span><span><b>Cart</b></span></div>
+    <div class="container wrapper">
+        <h1 class="details-head">Your Cart</h1>
+        <div class="project">
+            <div class="shop">
+                <div class="box">
+                    <img src="./images/image 8 (2).png" alt="Vertical Striped Shirt">
+                    <div class="content">
+                        <div class="content-body">
+                            <h4>Gradient Graphic T-shirt</h4>
+                            <p><b>Size:</b>Large</p>
+                            <p><b>Color:</b>White</p>
+                            <h3>$145</h3>
+                        </div>
+                        <p class="cart-btn add btn-global">
+                            <a href="#"><span class="plus">&#8722;</span></a>
+                            <a href="#">1</a>
+                            <a href="#"><span class="plus">&#65291;</span></a>
+                        </p>
+                        <p class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <img src="./images/image 8 (5).png" alt="Vertical Striped Shirt">
+                    <div class="content">
+                        <div class="content-body">
+                            <h4>Checked Shirt</h4>
+                            <p><b>Size:</b>Medium</p>
+                            <p><b>Color:</b>Red</p>
+                            <h3>$180</h3>
+                        </div>
+                        <p class="cart-btn add btn-global">
+                            <a href="#"><span class="plus">&#8722;</span></a>
+                            <a href="#">1</a>
+                            <a href="#"><span class="plus">&#65291;</span></a>
+                        </p>
+                        <p class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="box">
+                    <img src="./images/image 9 (2).png" alt="Vertical Striped Shirt">
+                    <div class="content">
+                        <div class="content-body">
+                            <h4>Skinny Fit Jeans</h4>
+                            <p><b>Size:</b>Large</p>
+                            <p><b>Color:</b>Black</p>
+                            <h3>$240</h3>
+                        </div>
+                        <p class="cart-btn add btn-global">
+                            <a href="#"><span class="plus">&#8722;</span></a>
+                            <a href="#">1</a>
+                            <a href="#"><span class="plus">&#65291;</span></a>
+                        </p>
+                        <p class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-bar">
+                <h3>Order Summary</h3>
+                <p>
+                    <span>Subtotal</span> <span>$565</span>
+                </p>
+                <p>
+                    <span>Discount(-20%)</span> <span>-$113</span>
+                </p>
+                <p>
+                    <span>Delivery Fee</span> <span>$15</span>
+                </p>
+                <hr>
+                <p>
+                    <span>Total</span> <span>$467</span>
+                </p>
+                <p class="promo-btn">
+                    <a class="promo" href="#">
+                        <input type="text" placeholder="Add Your Promo Here">
+                    </a>
+                    <a href="#"><button class="promo-apply btn-global active">Apply</button></a>
+                </p>
+                <p>
+                    <button class="checkout-btn btn-global active">Go to Checkout &rarr;</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="update-container">
+                <div class="update-header">
+                    <h2 class="up-head details-head">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h2>
+                </div>
+                <div class="search-box">
+                    <div>
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Subscribe to Newsletter">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-boxes container">
+                <div class="footer-box first">
+                    <h3 class="footer-head">SHOP.CO</h3>
+                    <ul class="social-media theme-color-font">
+                        <li class="para">We have clothes that suits your style and which you are proud to
+                            wear.From women to
+                            men.
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook "></i></a>
+                            <a href="#"><i class="fab fa-twitter "></i></a>
+                            <a href="#"><i class="fab fa-github "></i></a>
+                            <a href="#"><i class="fas fa-envelope "></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>Company</h3>
+                    <ul class="theme-color-font">
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="footer-box ">
+                    <h3>HELP</h3>
+                    <ul class="theme-color-font">
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>FAQ</h3>
+                    <ul class="theme-color-font">
+                        <li>Account</li>
+                        <li>Manage Deliveries</li>
+                        <li>Orders</li>
+                        <li>Payments</li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h3>RESOURCES</h3>
+                    <ul class="theme-color-font">
+                        <li>Free eBooks</li>
+                        <li>Development Tutorial</li>
+                        <li>How to -Blog</li>
+                        <li>Youtube Playlist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="container">
+
+        <div class="container foot">
+            <p class="theme-color-font">© 2000-2021, All rights reserved</p>
+            <div class="footer-image">
+                <a><img src="./images/Visa (1).png" alt="visa logo"></a>
+                <a><img src="./images/Mastercard (1).png" alt="mastercard logo">
+                </a>
+                <a><img src="./images/Paypal (1).png" alt="paypal logo"></a>
+                <a><img src="./images/ Pay (1).png" alt="dot pay logo"></a>
+                <a><img src="./images/G Pay (1).png" alt="G-pay logo"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
