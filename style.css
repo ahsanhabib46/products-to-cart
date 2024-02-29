@@ -166,7 +166,7 @@ nav .head a {
 }
 
 .search input {
-    padding: 5px 50px 5px 10px;
+    padding: 0.33rem 4rem 0.33rem 0.7rem;
     border-radius: 20px;
     font-size: 1rem;
     border: none;
@@ -179,7 +179,7 @@ input[type=search] {
     background-image: url(./images/Vector\ \(7\).png);
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 0.8rem 1.2rem  0.8rem 2.5rem;
 }
 
 /* ######################################### */
@@ -191,7 +191,7 @@ input[type=search] {
     background-position: 10px ;
     background-size: 16px 16px;
     background-repeat: no-repeat;
-    padding: 12px 40px;
+    padding: 0.8rem 2.5rem;
 }
 
 .promo input {
