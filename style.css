@@ -496,7 +496,7 @@ input[type=email] {
     .footer-boxes .first {
         grid-column: 1/-1;
         margin-top: 3.2rem;
-        /* margin-bottom: 2rem; */
+        margin-bottom: 0.5rem;
     }
 
     .update-container {
